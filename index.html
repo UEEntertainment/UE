@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>UE Entertainment – Where it all begins</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+  <style>
+    :root{--purple:#7B3CF5;--gold:#FFD700;--dark:#0A0A0A;--white:#FFFFFF;--font:'Segoe UI',sans-serif}
+    *{margin:0;padding:0;box-sizing:border-box;font-family:var(--font)}
+    body{background:var(--dark);color:var(--white);scroll-behavior:smooth}
+    header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at 20% 50%,var(--purple) 0%,transparent 40%),radial-gradient(circle at 80% 50%,var(--gold) 0%,transparent 40%);animation:bgMove 20s linear infinite}
+    @keyframes bgMove{0%{background-position:0 0}100%{background-position:100% 0}}
+    header h1{font-size:3rem;color:var(--gold);margin-bottom:.5rem}
+    header p{font-size:1.2rem;margin-bottom:2rem}
+    .cta{display:inline-block;margin:.5rem;padding:.8rem 2rem;border:2px solid var(--gold);color:var(--gold);border-radius:30px;text-decoration:none;transition:.3s}
+    .cta:hover{background:var(--gold);color:var(--dark)}
+    section{padding:80px 20px;max-width:1000px;margin:auto}
+    section h2{color:var(--gold);margin-bottom:30px;text-align:center;font-size:2rem}
+    .subs{display:grid;gap:30px}
+    .card{background:#0f0f0f;border:1px solid var(--purple);border-radius:12px;padding:30px;transition:.3s}
+    .card:hover{transform:translateY(-8px)}
+    .card h3{color:var(--gold);margin-bottom:10px}
+    .timeline{position:relative;border-left:2px solid var(--gold);padding-left:30px;margin-top:20px}
+    .timeline li{list-style:none;margin:20px 0;position:relative}
+    .timeline li::before{content:'';position:absolute;left:-38px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--gold)}
+    .news article{margin-bottom:20px;padding:15px;border-left:3px solid var(--gold)}
+    form{display:flex;flex-direction:column;gap:15px;max-width:600px;margin:auto}
+    input,textarea,select{padding:10px;border:1px solid var(--purple);background:var(--dark);color:var(--white);border-radius:6px}
+    button[type=submit]{align-self:flex-start;padding:10px 25px;background:var(--gold);color:var(--dark);border:none;border-radius:6px;cursor:pointer}
+    #lang{position:fixed;top:15px;right:15px;background:var(--dark);border:1px solid var(--gold);border-radius:20px;padding:5px 10px;font-size:.9rem;z-index:1000}
+  </style> 
+ <style type="text/css" id="dcoder_stylesheet">.hero-carousel{
+  max-width:100vw;     /* ancho máximo pantalla */
+  max-height:60vh;     /* altura máxima 60 % de la pantalla */
+  margin:auto;
+  overflow:hidden;
+}
+.hero-carousel img{
+  width:100%;
+  height:auto;
+  max-height:60vh;
+  object-fit:contain;  /* ajusta sin recortar */
+}</style></head> 
+ <body> <select id="lang"> <option value="en">EN</option> <option value="ko">KO</option> </select> 
+  <header> 
+   <h1 data-tr="homeTitle">UE Entertainment</h1> <!-- ===== CARRUSEL HERO ===== --> 
+   <div class="hero-carousel"> 
+    <img src="https://i.postimg.cc/wvHwW3L3/file-00000000d5c46243b03e60ca9e2a08ef.png" alt="WHAT! teaser"> 
+    <img src="https://i.postimg.cc/c455sxy5/Chat-GPT-Image-16-jul-2025-02-31-48.png" style="display:none"> 
+    <img src="https://i.postimg.cc/ghi/vibe-mv-still.jpg" style="display:none"> 
+   </div> 
+   <script>
+const slides=document.querySelectorAll('.hero-carousel img');
+let idx=0;
+setInterval(()=>{
+  slides[idx].style.display='none';
+  idx=(idx+1)%slides.length;
+  slides[idx].style.display='block';
+},4000);
+</script> 
+   <p data-tr="homeSub">Where it all begins</p> <a href="#subsidiaries" class="cta" data-tr="cta1">🧭 Meet Our Subsidiaries</a> <a href="#dramas" class="cta" data-tr="cta2">🎬 Discover Our Dramas</a> <a href="#news" class="cta" data-tr="cta3">🗞️ Latest News</a> <a href="#contact" class="cta" data-tr="cta4">✉️ Contact / Business</a> 
+  </header> 
+  <section id="about"> 
+   <h2 data-tr="aboutTitle">About Us</h2> 
+   <p data-tr="aboutText"> Founded in 2024 by Lee Eun-hee, UE Entertainment pioneers virtual K-pop, K-dramas and creative content, merging technology and art to create world-connecting experiences. </p> 
+   <ul class="timeline"> 
+    <li data-tr="tl2024">2024 – UE Entertainment founded by Lee Eun-hee</li> 
+    <li data-tr="tl2025a">2025 – First drama announced: ParaLove</li> 
+    <li data-tr="tl2025b">2025 – Pre-debut virtual group VIBE revealed</li> 
+    <li data-tr="tl2025c">2025 – STAR-10 official debut</li> 
+    <li data-tr="tlNext">(Soon) – ALL STAR Entertainment for real idols</li> 
+   </ul> 
+  </section> 
+  <section id="subsidiaries"> 
+   <h2 data-tr="subsTitle">Subsidiaries</h2> 
+   <div class="subs"> 
+    <div class="card"> 
+     <h3>🎤 ARCA LABELS</h3> 
+     <p>Where powerful girls are born. Home of VIBE and Pink Phanters.</p> <a href="arca.html" class="btn">Meet ARCA LABELS</a> 
+    </div> 
+    <div class="card"> 
+     <h3>🎧 GL BEATS</h3> 
+     <p data-tr="glDesc">Unleashing virtual boy power. Home of ETERNXL.</p> 
+    </div> 
+    <div class="card"> 
+     <h3>☁️ CLOUD ENTERTAINMENT</h3> 
+     <p data-tr="cloudDesc">Pop dreams above the clouds. STAR-10 headquarters.</p> 
+    </div> 
+    <div class="card"> 
+     <h3>🌍 ALL STAR ENTERTAINMENT</h3> 
+     <p data-tr="allstarDesc">For the stars of reality. Real-artist training platform coming soon.</p> 
+    </div> 
+    <div class="card"> 
+     <h3>🎬 VÉRA FILMWORKS</h3> 
+     <p data-tr="veraDesc">Stories that heal, hurt and stay. Producer of ParaLove &amp; Conquistando Versalles.</p> 
+    </div> 
+   </div> 
+  </section> 
+  <section id="dramas"> 
+   <h2 data-tr="dramasTitle">Dramas &amp; Films</h2> 
+   <div class="news"> 
+    <article> <strong>ParaLove</strong> – <span data-tr="paraLoveDesc">Supernatural romance</span> 
+    </article> 
+    <article> <strong>My Foreign Love</strong> – <span data-tr="foreignDesc">Cross-cultural love story</span> 
+    </article> 
+    <article> <strong>Kali: The Legend of Samsara</strong> – <span data-tr="kaliDesc">Mythic fantasy saga</span> 
+    </article> 
+   </div> 
+  </section> 
+  <section id="news"> 
+   <h2 data-tr="newsTitle">News &amp; Updates</h2> 
+   <div class="news"> 
+    <article> <strong>2025.07.15</strong> – <span data-tr="news1">VIBE pre-debut EP announced</span> 
+    </article> 
+    <article> <strong>2025.07.08</strong> – <span data-tr="news2">STAR-10 drops first album</span> 
+    </article> 
+   </div> 
+  </section> 
+  <section id="contact"> 
+   <h2 data-tr="contactTitle">Contact / Business</h2> 
+   <form onsubmit="alert('Message sent!');return false"> 
+    <input type="text" placeholder="Name" required> 
+    <input type="email" placeholder="Email" required> <select required> <option value="" data-tr="reason0">Reason</option> <option value="press" data-tr="reason1">Press</option> <option value="licenses" data-tr="reason2">Licenses</option> <option value="casting" data-tr="reason3">Casting</option> <option value="sponsorship" data-tr="reason4">Sponsorship</option> </select> <textarea placeholder="Message" rows="5" required></textarea> <button type="submit" data-tr="sendBtn">Send</button> 
+   </form> 
+   <p style="text-align:center;margin-top:20px"> 📧 <a href="mailto:ueentertainment859@gmail.com">ueentertainment@gmail.com</a><br> 📱 <a href="https://www.instagram.com/ue.entertainment_?igsh=ajF5czVkbnUzaXVi" target="_blank">@ue.entertainment_</a> </p> 
+  </section> 
+  <script>
+const dict={
+  en:{
+    homeTitle:"UE Entertainment",homeSub:"Where it all begins",
+    cta1:"🧭 Meet Our Subsidiaries",cta2:"🎬 Discover Our Dramas",cta3:"🗞️ Latest News",cta4:"✉️ Contact / Business",
+    aboutTitle:"About Us",aboutText:"Founded in 2024 by Lee Eun-hee, UE Entertainment pioneers virtual K-pop, K-dramas and creative content.",
+    tl2024:"2024 – UE Entertainment founded by Lee Eun-hee",
+    tl2025a:"2025 – First drama announced: ParaLove",
+    tl2025b:"2025 – Pre-debut virtual group VIBE revealed",
+    tl2025c:"2025 – STAR-10 official debut",
+    tlNext:"(Soon) – ALL STAR Entertainment for real idols",
+    subsTitle:"Subsidiaries",
+    arcaDesc:"Where powerful girls are born. Home of VIBE and Pink Phanters.",
+    glDesc:"Unleashing virtual boy power. Home of ETERNXL.",
+    cloudDesc:"Pop dreams above the clouds. STAR-10 headquarters.",
+    allstarDesc:"For the stars of reality. Real-artist training platform coming soon.",
+    veraDesc:"Stories that heal, hurt and stay. Producer of ParaLove & Conquistando Versalles.",
+    dramasTitle:"Dramas & Films",
+    paraLoveDesc:"Supernatural romance between a medical student and a wounded mafioso.",
+    foreignDesc:"Cross-cultural love story",
+    kaliDesc:"Mythic fantasy saga",
+    newsTitle:"News & Updates",
+    news1:"VIBE pre-debut EP announced",
+    news2:"STAR-10 drops first album",
+    contactTitle:"Contact / Business",
+    reason0:"Reason",reason1:"Press",reason2:"Licenses",reason3:"Casting",reason4:"Sponsorship",
+    sendBtn:"Send"
+  },
+  ko:{
+    homeTitle:"UE 엔터테인먼트",homeSub:"모든 것이 시작되는 곳",
+    cta1:"🧭 자회사 소개",cta2:"🎬 드라마 살펴보기",cta3:"🗞️ 최신 소식",cta4:"✉️ 문의 / 비즈니스",
+    aboutTitle:"회사 소개",aboutText:"2024년 이은희에 의해 설립된 UE Entertainment는 가상 K팝, K드라마, 크리에이티브 콘텐츠를 선도합니다.",
+    tl2024:"2024 – 이은희 설립",
+    tl2025a:"2025 – 첫 드라마 발표: ParaLove",
+    tl2025b:"2025 – 프리 데뷔 가상 그룹 VIBE 공개",
+    tl2025c:"2025 – STAR-10 공식 데뷔",
+    tlNext:"(곧) – ALL STAR Entertainment 실제 아이돌 육성",
+    subsTitle:"자회사",
+    arcaDesc:"강한 여자들이 태어나는 곳. VIBE와 Pink Phanters 본부.",
+    glDesc:"가상 남성 파워를 풀어내다. ETERNXL 본부.",
+    cloudDesc:"구름 위의 팝 꿈. STAR-10 본부.",
+    allstarDesc:"현실의 스타를 위한. 실제 연습생 플랫폼 예정.",
+    veraDesc:"치유하고, 아프게 하고, 머무는 이야기들. ParaLove & Conquistando Versalles 제작.",
+    dramasTitle:"드라마 & 영화",
+    paraLoveDesc:"의대생과 부상당한 마피아의 초자연적 로맨스.",
+    foreignDesc:"문화를 넘나드는 사랑 이야기",
+    kaliDesc:"신화적 판타지 서사",
+    newsTitle:"최신 소식",
+    news1:"VIBE 프리 데뷔 EP 발표",
+    news2:"STAR-10 첫 앨범 발매",
+    contactTitle:"문의 / 비즈니스",
+    reason0:"이유",reason1:"언론",reason2:"라이선스",reason3:"캐스팅",reason4:"스폰서십",
+    sendBtn:"전송"
+  }
+};
+function setLang(l){
+  localStorage.setItem('uelang',l);
+  Object.keys(dict[l]).forEach(key=>{
+    const el=document.querySelector('[data-tr="'+key+'"]');
+    if(el) el.textContent=dict[l][key];
+  });
+}
+document.getElementById('lang').addEventListener('change',e=>setLang(e.target.value));
+window.addEventListener('DOMContentLoaded',()=>setLang(localStorage.getItem('uelang')||'en'));
+</script> 
+ 
+</body></html>

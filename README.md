@@ -48,7 +48,7 @@
    <div class="hero-carousel"> 
     <img src="https://i.postimg.cc/wvHwW3L3/file-00000000d5c46243b03e60ca9e2a08ef.png" alt="WHAT! teaser"> 
     <img src="https://i.postimg.cc/c455sxy5/Chat-GPT-Image-16-jul-2025-02-31-48.png" style="display:none"> 
-    <img src="https://i.postimg.cc/ghi/vibe-mv-still.jpg" style="display:none"> 
+    <img src="https://i.postimg.cc/zvyY9xGL/54-sin-t-tulo-20250717130653.jpg" style="display:none"> 
    </div> 
    <script>
 const slides=document.querySelectorAll('.hero-carousel img');
